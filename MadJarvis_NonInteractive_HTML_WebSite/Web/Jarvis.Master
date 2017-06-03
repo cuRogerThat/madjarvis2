@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Jarvis.master.cs" Inherits="MadJarvis_NonInteractive_HTML_WebSite.Web.Jarvis" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../CSS/ComponentsAllignment.css" rel="stylesheet" />
+    <link href="../CSS/JarvisLogo.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="Header" runat="server">
+                <div class="MasterHeader">
+                    <div class="MasterHeaderLogo">
+                        <div id="show">
+                            <div id="iconTd">
+                                <span class="eyes"></span>
+                                <div id="jarvisJs">
+                                    <span class="mouth"></span>
+                                </div>
+                            </div>
+                            <div class="MasterHeaderTitle">
+                                <asp:Label Text="Mad Jarvis" runat="server" />
+                            </div>
+
+                        </div>
+                        </div>
+                    </div>
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="LeftPannel" runat="server">
+                <div class="MasterLeftPannel">
+                    <asp:Label Text="Left Pannel" runat="server" />
+                </div>
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="RightPannel" runat="server">
+                <div class="MasterRightPannel">
+                    <asp:Label Text="Right Pannel" runat="server" />
+                </div>
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="Body" runat="server">
+                <div class="MasterBody">
+                </div>
+            </asp:ContentPlaceHolder>
+
+            <asp:ContentPlaceHolder ID="Footer" runat="server">
+                <div class="MasterFooterTitle">
+                    <asp:Label Text="Footer  " runat="server" />
+                </div>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
